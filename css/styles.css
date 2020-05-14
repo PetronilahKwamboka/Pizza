@@ -1,0 +1,21 @@
+html, body{
+  background: black;
+}
+.jumbotron{
+  border-radius: 50px;
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: maroon;
+  text-align: center;
+  font-family: 'Gabriela', serif;
+  background: grey;
+}
+
+.contact-us{
+  text-align: center;
+  background-image: url('../images/background.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  color: silver;
+}
