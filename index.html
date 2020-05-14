@@ -15,14 +15,25 @@
   </head>
   <body>
     <div class="container">
+      <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pizza-menu"></button>
+          
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container">
       <h1>Make your Choice</h1>
       <div class="row">
-        <form class="new-pizza" id="new-pizza">
+        <form class="form" id="new-pizza">
           <div class="form-group">
             <p>Pizza-size:</p>
             <input type="checkbox" name="pizza-size" id="small" value="300"><label for="small">small</label>
-            <input type="checkbox" name="pizza-size" id="medium" value="500"><label for="medium">medium</label>
-            <input type="checkbox" name="pizza-size" id="large" value="800"><label for="Large">Large</label>
+            <input type="checkbox" name="pizza-size" id="medium" value="400"><label for="medium">medium</label>
+            <input type="checkbox" name="pizza-size" id="large" value="700"><label for="Large">Large</label>
           </div>
           <div class="form-group">
             <p>crust:</p>
@@ -40,7 +51,7 @@
           </div>
           <div class="form-group">
             <label for="quantity">Select Quantity</label>
-            <select class="custon-select" id="quantity" name="quantity">
+            <select class="form-control" id="quantity" name="quantity">
               <option selected>Open to select</option>
               <option value="1">one</option>
               <option value="2">Two</option>
@@ -52,15 +63,19 @@
           </div>
           <div class="form-group">
             <label for="delivery">Delivery</label>
-            <select class="custom-select" id="delivery" name="delivery">
+            <select class="form-control" id="delivery" name="delivery">
               <option selected>--select--</option>
               <option value="1">Deliver</option>
               <option value="2">Don't Deliver</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary" name="button">Checkout</button>
+          <button type="submit" id="btnsubmit" class="btn btn-primary" name="button">Checkout</button>
 
         </form>
+        <div class="result" id="new-order">
+
+
+        </div>
 
       </div>
 
