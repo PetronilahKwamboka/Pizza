@@ -15,22 +15,31 @@
   </head>
   <body>
     <div class="container">
-      <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pizza-menu">
-            <span class="">Toggle Navigation</span>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pizza-navbar-menu">
+            <span class="scr-only">Toggle Navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-
-
-
+          <a class="nav-link" href="index.html">Navigation</a>
         </div>
 
+        <div class="collapse-bar navbar-collapse pizza-navbar-menu">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+
+          </ul>
+
+        </div>
+       </nav>
       </div>
 
-    </div>
+
     <div class="container">
       <h1>Make your Choice</h1>
       <div class="row">
