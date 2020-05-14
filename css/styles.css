@@ -4,12 +4,16 @@ html, body{
 .jumbotron{
   border-radius: 50px;
   margin: 20px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: maroon;
   text-align: center;
   font-family: 'Gabriela', serif;
   background: grey;
+}
+
+.namehead{
+  font-size: 60px;
 }
 
 .contact-us{
