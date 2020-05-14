@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -20,9 +20,9 @@
         <form class="new-pizza" id="new-pizza">
           <div class="form-group">
             <p>Pizza-size:</p>
-            <input type="checkbox" name="pizza-size" id="small" value="small"><label for="small">small</label>
-            <input type="checkbox" name="pizza-size" id="medium" value="medium"><label for="medium">medium</label>
-            <input type="checkbox" name="pizza-size" id="large" value="large"><label for="Large">Large</label>
+            <input type="checkbox" name="pizza-size" id="small" value="300"><label for="small">small</label>
+            <input type="checkbox" name="pizza-size" id="medium" value="500"><label for="medium">medium</label>
+            <input type="checkbox" name="pizza-size" id="large" value="800"><label for="Large">Large</label>
           </div>
           <div class="form-group">
             <p>crust:</p>
@@ -32,12 +32,33 @@
           </div>
           <div class="form-group">
             <p>Topping(s):</p>
-            <input type="checkbox" id="pepperoni" name="topping" value=""><label for="pepperoni">pepperoni</label>
-            <input type="checkbox" id="mushroom" name="topping" value=""><label for="mushroom">mushroom</label>
-            <input type="checkbox" id="bacon" name="topping" value=""><label for="bacon">bacon</label>
-            <input type="checkbox" id="sausage" name="topping" value=""><label for="sausage">sausage</label>
-            <input type="checkbox" id="extra-cheese" name="topping" value=""><label for="extra-cheese">Extra-cheese</label>
+            <input type="checkbox" id="pepperoni" name="topping" value="400"><label for="pepperoni">pepperoni</label>
+            <input type="checkbox" id="mushroom" name="topping" value="700"><label for="mushroom">mushroom</label>
+            <input type="checkbox" id="bacon" name="topping" value="300"><label for="bacon">bacon</label>
+            <input type="checkbox" id="sausage" name="topping" value="300"><label for="sausage">sausage</label>
+            <input type="checkbox" id="extra-cheese" name="topping" value="500"><label for="extra-cheese">Extra-cheese</label>
           </div>
+          <div class="form-group">
+            <label for="quantity">Select Quantity</label>
+            <select class="custon-select" id="quantity" name="quantity">
+              <option selected>Open to select</option>
+              <option value="1">one</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="4">Four</option>
+              <option value="5">five</option>
+
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="delivery">Delivery</label>
+            <select class="custom-select" id="delivery" name="delivery">
+              <option selected>--select--</option>
+              <option value="1">Deliver</option>
+              <option value="2">Don't Deliver</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" name="button">Checkout</button>
 
         </form>
 
