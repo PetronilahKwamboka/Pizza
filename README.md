@@ -23,7 +23,7 @@
 
 ## Set-up Instructions
 
-- git clone
+- git clone https://github.com/PetronilahKwamboka/Pizza.git
 
 - cd directory
 
