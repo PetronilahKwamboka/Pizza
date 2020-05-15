@@ -23,13 +23,20 @@ html, body{
 .contact-us{
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
-  background-image: url('../images/pizzabackground.jpeg');
+  background-image: url('../images/backgrnd.jpg');
   background-position: center;
-  background-size: cover;
+  background-size: center;
   background-repeat: no-repeat;
   opacity: 0.7;
   border: none;
   outline: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.content-form{
+  color: black;
+  background-color: silver;
 }
