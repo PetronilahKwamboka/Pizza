@@ -11,3 +11,12 @@
 - If the choice is they want it to be delivered, then the user is prompted to enter the location.
 - On checkout button, the user gets the details of what they ordered plus the total amount.
  -Yeah it is that simple.
+
+## Techmologies Used
+
+- The project was made a success with the aid of the following technologies:
+
+ ----*HTML
+ ----*css
+ ----*Javascript $ jquery
+ -----*Git
