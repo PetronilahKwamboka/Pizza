@@ -25,13 +25,13 @@ $(document).ready(function(){
       var crusts = parseInt($("input[type=checkbox][name=crust]:checked").val());
       var toppings = parseInt($("input[type=checkbox][name=topping]:checked").val());
       var quantity = parseInt($("#quantity").val());
-      var delivery = ($("#delivery").val());
+      var delivery = $("#delivery").val();
 
 
       var newOrder = new Order(pizzaSize, crusts, toppings, quantity, delivery);
 
 
-    $("ul#lists").append("<li><span class='list-orders'>" + newOrder.fullOrder() + ("  ||")+("Total is: ") + newOrder.totalPrice() + "</span></li> ");
+    $("ul#lists").append("<li><span class='list-orders'>" + newOrder.fullOrder() + ("  ||") +  ("Total is: ") + newOrder.totalPrice() + "</span></li> ");
 
     $("input[type=checkbox][name=pizza-size]:checked").val("");
     $("input[type=checkbox][name=crust]:checked").val("");
