@@ -12,14 +12,14 @@
 - On checkout button, the user gets the details of what they ordered plus the total amount.
  -Yeah it is that simple.
 
-## Techmologies Used
+## Technologies Used
 
 - The project was made a success with the aid of the following technologies:
 
- ..*HTML
- ...*css
- ....*Javascript $ jquery
- .....*Git
+           - HTML
+            - css
+             - Javascript $ jquery
+              - Git
 
 ## Set-up Instructions
 
@@ -35,7 +35,7 @@
 ### Copyright & Licence
 
 - All rights reserved
-- cpyright(c) PetronilahKwamboka Moringa Prep
+- Copyright(c) PetronilahKwamboka Moringa Prep
 
 #### Licence
 
