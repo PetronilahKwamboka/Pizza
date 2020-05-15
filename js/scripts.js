@@ -11,6 +11,10 @@ Order.prototype.totalPrice = function(){
   return (this.pizzaSize + this.topping) * this.quantity;
 }
 
+Order.prototype.fullOrder = function(){
+  return this.pizzaSize + ", " + this.crust + ", " + this.topping + "," + this.quantity + "," + this.delivery;
+}
+
 
 //user interface logic
 
@@ -27,7 +31,7 @@ $(document).ready(function(){
       var newOrder = new Order(pizzaSize, crusts, toppings, quantity, delivery);
 
 
-    $("ul#lists").append("<li><span class='list-orders'>" + newOrder.totalPrice() + "</span></li> ");
+    $("ul#lists").append("<li><span class='list-orders'>" + newOrder.fullOrder() + ("  ||")+("Total is: ") + newOrder.totalPrice() + "</span></li> ");
 
     $("input[type=checkbox][name=pizza-size]:checked").val("");
     $("input[type=checkbox][name=crust]:checked").val("");
