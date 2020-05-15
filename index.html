@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale = 0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
     <script
     			  src="https://code.jquery.com/jquery-3.5.1.js"
     			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -14,7 +15,7 @@
     <title>petie's Pizza</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container main">
       <nav class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pizza-navbar-menu">
@@ -28,7 +29,7 @@
 
         <div class="collapse-bar navbar-collapse pizza-navbar-menu">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#"><Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="menu.html">Menu</a></li>
             <li><a href="order.html">Order</a></li>
@@ -36,80 +37,103 @@
 
         </div>
        </nav>
+      </div>
+      <div class="container">
+        <div class="jumbotron">
+          <h1 class="namehead">Petie's Pizza</h1>
+          <p>Delicious mouth-watering baked pizza with fresh ingredients. Welcome all!</p>
+        </div>
 
+      </div>
        <div class="center">
-         <h1>Petie's Pizza</h1>
-         <p>Delicious mouth-watering baked pizza with fresh ingredients. Welcome all!</p>
          <hr>
          <h3>Opening hours are from 8.00am to 6.00pm, Everyday.</h3>
          <p>Drop by anytime within the working hours or make an order. Checkout <a href="menu.html">Menu</a></p>
          <hr>
-
-         <section class="contact">
-           <h3>You can reach us out through:</h3>
-           <p>Phone: +254738217930</p>
-           <p>Address: H15 Highrise, Mbagathi, Nairobi</p>
-           <p>Email: <a href="petiespizza@gmail.com">petiepizza@gmail.com</a></p>
-           <p>Instagram: <a href="https://instagram.com/@petiespizza">@petie'spizza</a></p>
-           <p>Twitter: <a href="https://twitter.com/@petiespizza">@petie'spizza</a></p>
-
-         </section>
-
        </div>
-      </div>
 
+         <div class="container contact-us">
+           <div class="row">
+             <div class="col-md-6">
+               <h3>You can reach us out through:</h3>
+               <p>Phone: +254738217930</p>
+               <p>Address: H15 Highrise, Mbagathi, Nairobi</p>
+               <p>Email: <a href="petiespizza@gmail.com">petiepizza@gmail.com</a></p>
+               <p>Instagram: <a href="https://instagram.com/@petiespizza">@petie'spizza</a></p>
+               <p>Twitter: <a href="https://twitter.com/@petiespizza">@petie'spizza</a></p>
 
-    <div class="container">
+             </div>
+             <div class="col-md-6">
+               <h1>About Us</h1>
+               <hr>
+               <h3>Our Story</h3>
+               <section>
+                 <p>Petie's Pizza was started in March 2019 with the main purpose of serving people around our community with various delicacies of pizza.</p>
+                 <p>Our location was inspired by the high number of college students around who were mainly our target market, but through marketing research and implementation, we have also acquired customers from various parts of Nairobi County.</p>
+                 <p>Our pizzas are always praised by our customers, not to brag but seriously they are. Don't take our word for it though. Try one and see!!</p>
+               </section>
+
+             </div>
+           </div>
+
+         </div>
+
+    <div class="container content-form">
       <h1>Make your Choice</h1>
       <div class="row">
-        <form class="form" id="new-pizza">
-          <div class="form-group">
-            <p>Pizza-size:</p>
-            <input type="checkbox" name="pizza-size" id="small" value="300"><label for="small">small</label>
-            <input type="checkbox" name="pizza-size" id="medium" value="400"><label for="medium">medium</label>
-            <input type="checkbox" name="pizza-size" id="large" value="700"><label for="Large">Large</label>
-          </div>
-          <div class="form-group">
-            <p>crust:</p>
-            <input type="checkbox" name="crust" id="crispy" value=""><label for="crispy">crispy</label>
-            <input type="checkbox" name="crust" id="stuffed" value=""><label for="stuffed">stuffed</label>
-            <input type="checkbox" name="crust" id="gluten-free" value=""><label for="gluten-free">Gluten-free</label>
-          </div>
-          <div class="form-group">
-            <p>Topping(s):</p>
-            <input type="checkbox" id="pepperoni" name="topping" value="400"><label for="pepperoni">pepperoni</label>
-            <input type="checkbox" id="mushroom" name="topping" value="700"><label for="mushroom">mushroom</label>
-            <input type="checkbox" id="bacon" name="topping" value="300"><label for="bacon">bacon</label>
-            <input type="checkbox" id="sausage" name="topping" value="300"><label for="sausage">sausage</label>
-            <input type="checkbox" id="extra-cheese" name="topping" value="500"><label for="extra-cheese">Extra-cheese</label>
-          </div>
-          <div class="form-group">
-            <label for="quantity">Select Quantity</label>
-            <select class="form-control" id="quantity" name="quantity">
-              <option selected>Open to select</option>
-              <option value="1">one</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-              <option value="4">Four</option>
-              <option value="5">five</option>
+        <div class="col-md-6">
+          <form class="form" id="new-pizza">
+            <div class="form-group">
+              <p>Pizza-size:</p>
+              <input type="checkbox" name="pizza-size" id="small" value="300"><label for="small">small</label>
+              <input type="checkbox" name="pizza-size" id="medium" value="400"><label for="medium">medium</label>
+              <input type="checkbox" name="pizza-size" id="large" value="700"><label for="Large">Large</label>
+            </div>
+            <div class="form-group">
+              <p>crust:</p>
+              <input type="checkbox" name="crust" id="crispy" value=""><label for="crispy">crispy</label>
+              <input type="checkbox" name="crust" id="stuffed" value=""><label for="stuffed">stuffed</label>
+              <input type="checkbox" name="crust" id="gluten-free" value=""><label for="gluten-free">Gluten-free</label>
+            </div>
+            <div class="form-group">
+              <p>Topping(s):</p>
+              <input type="checkbox" id="pepperoni" name="topping" value="400"><label for="pepperoni">pepperoni</label>
+              <input type="checkbox" id="mushroom" name="topping" value="700"><label for="mushroom">mushroom</label>
+              <input type="checkbox" id="bacon" name="topping" value="300"><label for="bacon">bacon</label>
+              <input type="checkbox" id="sausage" name="topping" value="300"><label for="sausage">sausage</label>
+              <input type="checkbox" id="extra-cheese" name="topping" value="500"><label for="extra-cheese">Extra-cheese</label>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Select Quantity</label>
+              <select class="form-control" id="quantity" name="quantity">
+                <option selected>Open to select</option>
+                <option value="1">one</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+                <option value="5">five</option>
 
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="delivery">Delivery</label>
-            <select class="form-control" id="delivery" name="delivery">
-              <option selected>--select--</option>
-              <option value="1">Deliver</option>
-              <option value="2">Don't Deliver</option>
-            </select>
-          </div>
-          <button type="submit" id="btnsubmit" class="btn btn-primary" name="button">Checkout</button>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="delivery">Delivery</label>
+              <select class="form-control" id="delivery" name="delivery">
+                <option selected>--select--</option>
+                <option value="1">Deliver</option>
+                <option value="2">Don't Deliver</option>
+              </select>
+            </div>
+            <button type="submit" id="checkout" class="btn btn-primary" name="button">Checkout</button>
+          </form>
 
-        </form>
-        <div class="result" id="new-order">
+              <ul id="lists">
+
+              </ul>
 
 
         </div>
+
+
 
       </div>
 
