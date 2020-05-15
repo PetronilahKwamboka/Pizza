@@ -16,7 +16,15 @@
 
 - The project was made a success with the aid of the following technologies:
 
- ----*HTML
- ----*css
- ----*Javascript $ jquery
- -----*Git
+ ..*HTML
+ ...*css
+ ....*Javascript $ jquery
+ .....*Git
+
+## Set-up Instructions
+
+- git clone
+
+- cd directory
+
+- open in text editor e.g atom .
