@@ -28,3 +28,15 @@
 - cd directory
 
 - open in text editor e.g atom .
+
+### Link to site
+
+
+### Copyright & Licence
+
+- All rights reserved
+- cpyright(c) PetronilahKwamboka Moringa Prep
+
+#### Licence
+
+ MIT
