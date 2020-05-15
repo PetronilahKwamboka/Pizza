@@ -25,7 +25,7 @@ $(document).ready(function(){
       var crusts = parseInt($("input[type=checkbox][name=crust]:checked").val());
       var toppings = parseInt($("input[type=checkbox][name=topping]:checked").val());
       var quantity = parseInt($("#quantity").val());
-      var delivery = parseInt($("#delivery").val());
+      var delivery = ($("#delivery").val());
 
 
       var newOrder = new Order(pizzaSize, crusts, toppings, quantity, delivery);
