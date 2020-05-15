@@ -10,6 +10,7 @@ html, body{
   text-align: center;
   font-family: 'Gabriela', serif;
   background: grey;
+
 }
 
 .namehead{
@@ -21,11 +22,14 @@ html, body{
 }
 .contact-us{
   text-align: center;
-  background-image: url('../images/background.jpeg');
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.7;
   color: white;
   font-size: 20px;
   font-weight: 600;
+  background-image: url('../images/pizzabackground.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  border: none;
+  outline: none;
 }
