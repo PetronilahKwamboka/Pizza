@@ -21,6 +21,8 @@ html, body{
   text-align: right;
   font-size: 18px;
 }
+
+
 .contact-us{
   text-align: center;
   color: white;
@@ -56,3 +58,6 @@ html, body{
   color: yellow;
   font-size: 25px;
 }
+ a{
+   color: white;
+ }
