@@ -38,5 +38,9 @@ html, body{
 
 .content-form{
   color: black;
-  background-color: silver;
+  background-color: rgb(120, 120, 120);
+}
+
+.display-content{
+  display: none;
 }
