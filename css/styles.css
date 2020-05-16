@@ -19,6 +19,7 @@ html, body{
 .center{
   color: tomato;
   text-align: right;
+  font-size: 18px;
 }
 .contact-us{
   text-align: center;
@@ -39,8 +40,19 @@ html, body{
 .content-form{
   color: black;
   background-color: rgb(120, 120, 120);
+  font-size: 25px;
 }
 
+.content-form h1{
+  color: maroon;
+  font-family: 'Gabriela', serif;
+}
 .display-content{
   display: none;
+  background-image: url('../images/background.jpeg');
+  background-position: left;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  color: yellow;
+  font-size: 25px;
 }
