@@ -26,12 +26,17 @@ $(document).ready(function(){
       var toppings = parseInt($("input[type=checkbox][name=topping]:checked").val());
       var quantity = parseInt($("#quantity").val());
       var delivery = $("#delivery").val();
+      if(delivery.checked === "Deliver"){
+        console.log('Enter location:');
+      } else {
+        alert("Your order is ready for pick-up");
+      }
 
 
       var newOrder = new Order(pizzaSize, crusts, toppings, quantity, delivery);
 
 
-    $("ul#lists").append("<li><span class='list-orders'>" + newOrder.fullOrder() + ("  ||") +  ("Total is: ") + newOrder.totalPrice() + "</span></li> ");
+    $("ul#lists").prepend("<li><span class='list-orders'>" + newOrder.fullOrder() + ("  ||") +  ("Total is: ") + newOrder.totalPrice() + "</span></li> ");
 
     $("input[type=checkbox][name=pizza-size]:checked").val("");
     $("input[type=checkbox][name=crust]:checked").val("");
