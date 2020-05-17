@@ -7,6 +7,17 @@ function Order(size, crust, topping, quantity, delivery) {
   this.delivery = delivery;
 }
 
+function Contacts(first, last, phoneNumber) {
+  this.firstName = first;
+  this.lastName = last;
+  this.phoneNumber = phoneNumber;
+
+}
+
+Contacts.prototype.fullInformation = function(){
+  return this.firstName + ", " + this.lastName + ", " + this.phoneNumber + ": ";
+}
+
 Order.prototype.totalPrice = function(){
   return (this.pizzaSize + this.crust + this.topping) * this.quantity;
 }
@@ -15,8 +26,11 @@ Order.prototype.fullOrder = function(){
   return this.pizzaSize + ", " + this.crust + ", " + this.topping + "," + this.quantity + "," + this.delivery;
 }
 
-function resetFields() {
 
+function resetFields() {
+  $("input#firstName").val();
+  $("input#lastName").val();
+  $("input#phoneNumber").val();
   $("input[type=checkbox][name=pizza-size]:checked").val("").prop('checked', false);
   $("input[type=checkbox][name=crust]:checked").val("").prop('checked', false);
   $("input[type=checkbox][name=topping]:checked").val("").prop('checked', false);
@@ -28,6 +42,9 @@ function resetFields() {
 $(document).ready(function(){
   $("form#new-pizza").submit(function(event){
     event.preventDefault();
+      var inputtedFirstName = $("input#firstName").val();
+      var inputtedLastName = $("input#lastName").val();
+      var inputtedPhoneNumber = $("input#phoneNumber").val();
       var pizzaSize = parseInt($("input[type=checkbox][name=pizza-size]:checked").val());
       var crusts = parseInt($("input[type=checkbox][name=crust]:checked").val());
       var toppings = parseInt($("input[type=checkbox][name=topping]:checked").val());
@@ -41,11 +58,13 @@ $(document).ready(function(){
         alert("You can pick up your order before closing hours");
       }
 
+      var newContacts = new Contacts(inputtedFirstName, inputtedLastName, inputtedPhoneNumber);
+
 
       var newOrder = new Order(pizzaSize, crusts, toppings, quantity, delivery);
 
     $(".display-content").show();
-    $("ul#lists").append("<li><span class='list-orders'>" + newOrder.fullOrder() + ("  ||") +  ("Total is Ksh: ") + newOrder.totalPrice() + "</span></li> ");
+    $("ul#lists").append("<li><span class='list-orders'>" + newContacts.fullInformation() + newOrder.fullOrder() + ("  ||") +  ("Total is Ksh: ") + newOrder.totalPrice() + "</span></li> ");
 
     resetFields();
 
