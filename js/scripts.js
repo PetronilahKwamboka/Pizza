@@ -28,9 +28,9 @@ Order.prototype.fullOrder = function(){
 
 
 function resetFields() {
-  $("input#firstName").val();
-  $("input#lastName").val();
-  $("input#phoneNumber").val();
+  $("input#firstName").val("");
+  $("input#lastName").val("");
+  $("input#phoneNumber").val("");
   $("input[type=checkbox][name=pizza-size]:checked").val("").prop('checked', false);
   $("input[type=checkbox][name=crust]:checked").val("").prop('checked', false);
   $("input[type=checkbox][name=topping]:checked").val("").prop('checked', false);
